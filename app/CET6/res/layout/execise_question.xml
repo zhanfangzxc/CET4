@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#deedcf"
+    android:paddingLeft="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_bg1"
+        android:orientation="vertical" >
+    <TextView
+        android:id="@+id/question_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:text="1. fakd gjds lhgsdkl jgkl shotbjeosbnus tobjlksdbh tjslt nsnbjt?"
+        android:textColor="#222"
+        android:textSize="16sp" />
+    </RelativeLayout>
+
+	
+</LinearLayout>

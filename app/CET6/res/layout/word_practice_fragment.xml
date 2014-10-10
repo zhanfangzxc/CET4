@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_10_dip"
+    android:orientation="vertical" >
+
+    <include layout="@layout/word_head_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/main_layout_bg"
+        android:padding="@dimen/dimen_1_dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sub_layout_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5_dip"
+                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                    android:layout_marginRight="@dimen/dimen_20_dip"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/content_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:button="@drawable/checkbox"
+                        android:textColor="@color/text_color_6c"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/play_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sound_btn" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/comment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10_dip"
+                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                    android:layout_marginRight="@dimen/dimen_20_dip"
+                    android:visibility="gone" 
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/word_solid_driver" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dimen_5_dip"
+                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                    android:layout_marginRight="@dimen/dimen_20_dip"
+                    android:layout_marginTop="@dimen/dimen_10_dip" >
+
+                    <TextView
+                        android:id="@+id/example_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" 
+                        android:textSize="16sp"/>
+                </ScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/word_dased_dirver" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip" >
+
+                <ImageButton
+                    android:id="@+id/fuzzy_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:background="@drawable/word_fuzzy_btn" />
+
+                <ImageButton
+                    android:id="@+id/know_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fuzzy_btn"
+                    android:background="@drawable/word_know_btn" />
+
+                <ImageButton
+                    android:id="@+id/previous_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:background="@drawable/word_previous_btn"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/previous_btn"
+                    android:background="@drawable/word_next_btn"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

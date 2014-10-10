@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="听力"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!-- <TextView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:layout_marginTop="10dp" -->
+        <!-- android:text="边听边学更快速" -->
+        <!-- android:textColor="#000000" -->
+        <!-- android:textSize="16sp" /> -->
+
+        <com.yingshibao.cet4.ui.MyGridView
+            android:id="@+id/gv_listen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+        </com.yingshibao.cet4.ui.MyGridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="阅读"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!-- <TextView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginTop="10dp" -->
+        <!-- android:text="最丰富的阅读资源" -->
+        <!-- android:textColor="#000000" -->
+        <!-- android:textSize="16sp" /> -->
+
+        <com.yingshibao.cet4.ui.MyGridView
+            android:id="@+id/gv_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+        </com.yingshibao.cet4.ui.MyGridView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/word_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="单词"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/unknown_bt"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/unknown_bt" />
+        </RelativeLayout>
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/word" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:layout_marginTop="10dp" -->
+        <!-- android:text="让你的词汇量一日千里" -->
+        <!-- android:textColor="#000000" -->
+        <!-- android:textSize="16sp" /> -->
+        <!-- </RelativeLayout> -->
+
+        <com.yingshibao.cet4.ui.MyGridView
+            android:id="@+id/gv_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+        </com.yingshibao.cet4.ui.MyGridView>
+
+        <Button
+            android:id="@+id/iv_article_template"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="32dip"
+            android:layout_marginRight="32dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/article_btn"
+            android:text="四六级作文模板"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

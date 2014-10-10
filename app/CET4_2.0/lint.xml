@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CommitTransaction">
+        <ignore path="src/com/yingshibao/cet4_zss/activity/PracticeActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ValidFragment" severity="ignore" />
+</lint>

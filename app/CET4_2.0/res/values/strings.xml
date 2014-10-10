@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- 应用String -->
+    <string name="app_name">应试宝英语四级</string>
+    <string name="app_label">cet4_control</string>
+    <string name="app_package">com.yingshibao.cet4</string>
+    <string name="dowload_dir">yingshibao</string>
+    <!-- 公共String -->
+    <string name="common_notopen">暂未开放,敬请期待</string>
+    <string name="common_selectall">全选</string>
+    <string name="common_progress">正在努力加载…</string>
+    <string name="set_str">设置</string>
+    <string name="remember_str">找回密码</string>
+    <!-- 登陆界面String -->
+    <string name="username_hint">请输入邮箱</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="forget_password">找回密码</string>
+    <string name="third_party_landing">第三方登陆</string>
+    <string name="username_promt">用户名不能为空</string>
+    <string name="password_promt">密码不能为空</string>
+
+    <!-- 注册界面String -->
+    <string name="reg_username_hint">邮箱</string>
+    <string name="reg_password_hint">请输入密码</string>
+    <string name="reg_check_password_hint">请填写所在学校</string>
+    <string name="reg_password_notthesame">您输入的密码和确认密码不一致</string>
+    <string name="reg_user_hint">新注册用户</string>
+    <string name="username_str">注册账号:</string>
+    <string name="password_str">账号密码:</string>
+    <string name="chekpassword_str">所在学校:</string>
+    <!-- 课程评价界面String -->
+    <string name="assess_str">用户反馈</string>
+    <string name="thanks">感谢您对我们的产品提出意见或建议</string>
+    <string name="assess_hint">请输入您的宝贵意见:\u0020\</string>
+    <string name="unlogin_text">未登陆</string>
+
+    <!-- 词汇String -->
+    <string name="word_title">词汇</string>
+    <string name="listen_title">听力</string>
+    <string name="read_title">阅读</string>
+    <string name="exam">视频学习</string>
+    <string name="real_exam">真题训练</string>
+    <string name="online">互动直播</string>
+    <string name="user_center">个人中心</string>
+
+</resources>

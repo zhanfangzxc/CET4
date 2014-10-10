@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5_dip"
+        android:text="1  where is Billy&apos;s destiny?" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/option_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5_dip"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:text="A:aaaaa\nB:bbbbb\nC:ccccc" />
+        
+    </RelativeLayout>
+
+   <LinearLayout
+        android:id="@+id/resolv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_10_dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/answer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/answer_title"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33dp"
+                android:background="@drawable/explain_btn" />
+
+            <TextView
+                android:id="@+id/answer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="[答案]:"
+                android:textColor="@color/blue_style1"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/resolve_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[解析]:"
+                android:textColor="@color/blue_style1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/resolve_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdadasdasdasdasdasdsa"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

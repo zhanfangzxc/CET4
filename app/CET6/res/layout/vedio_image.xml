@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vedio_bg" >
+
+    <ImageButton
+        android:id="@+id/vedioImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_2_dip"
+        android:layout_marginRight="@dimen/dimen_2_dip"
+        android:background="@drawable/vedio_img" >
+    </ImageButton>
+
+</RelativeLayout>

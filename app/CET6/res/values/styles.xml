@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="MMTabButton">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/mm_tab_btn</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+
+</resources>

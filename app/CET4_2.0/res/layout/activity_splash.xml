@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_welcome" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_100_dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/downloadTextView"
+            android:layout_width="@dimen/dimen_150_dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="0%"
+            android:visibility="gone" >
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/progressbar_download"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/dimen_220_dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone" >
+        </ProgressBar>
+    </LinearLayout>
+
+</RelativeLayout>

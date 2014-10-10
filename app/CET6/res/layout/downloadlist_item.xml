@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:id="@+id/txt" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/white"
+			android:text="四级听力练习1"
+			android:textSize="18sp"
+			android:layout_marginLeft="@dimen/dimen_10_dip"/>
+		<ProgressBar 
+			android:id="@+id/progressBar" 
+			android:layout_width="@dimen/dimen_100_dip" 
+			android:layout_height="wrap_content"
+			android:max="100"
+			style="?android:attr/progressBarStyleHorizontal"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical">
+	<Button 
+		android:id="@+id/btn_stop"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="停止"/>	
+	<Button 
+		android:id="@+id/btn_start"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="下载"/>
+	<Button 
+		android:id="@+id/btn_pause"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="暂停"/>	
+	<Button 
+		android:id="@+id/btn_continue"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="继续"/>			
+	</LinearLayout>
+</LinearLayout>
+

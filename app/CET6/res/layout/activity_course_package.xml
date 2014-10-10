@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/cource_package_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10_dip"
+        android:cacheColorHint="#ffffffff"
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:fastScrollEnabled="true"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10_dip" >
+
+    <include layout="@layout/main_head_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/main_layout_bg"
+        android:padding="@dimen/dimen_1_dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/sub_layout_bg" >
+			 <ExpandableListView
+                android:id="@+id/course_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="@null"
+                android:childDivider="@null"
+                android:divider="@null"
+                android:groupIndicator="@null" >
+            </ExpandableListView>
+           
+            <ImageButton
+            	android:id="@+id/change_select_btn"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentBottom="true"
+            	android:layout_marginBottom="@dimen/dimen_10_dip"
+            	android:src="@drawable/change_select"
+            	android:background="@color/transparent" 
+            	android:visibility="invisible"/>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yingshibao.cet4"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <!-- 网络权限 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:name="com.yingshibao.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+
+        <!-- 数据库名称 -->
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="cet4.db" />
+        <!-- 数据库版本号 不设置默认是1 -->
+
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <!-- 引导页 -->
+
+        <provider
+            android:name="com.activeandroid.content.ContentProvider"
+            android:authorities="com.yingshibao.cet4"
+            android:exported="false" />
+
+        <activity
+            android:name="com.yingshibao.cet4.activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 欢迎页 -->
+
+        <activity
+            android:name="com.yingshibao.cet4.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <!-- 登陆页 -->
+
+        <activity
+            android:name="com.yingshibao.cet4.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+        <!-- 注册页 -->
+        <activity
+            android:name="com.yingshibao.cet4.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 支付页 -->
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

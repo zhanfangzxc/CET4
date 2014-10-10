@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_45_dip"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/item_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="#368fcb"
+        android:orientation="horizontal" >
+		<ImageView android:id="@+id/left_line"
+            android:layout_width="@dimen/dimen_2_dip"
+            android:layout_height="match_parent"
+            android:background="#368fcb" />
+        <ImageView
+             android:id="@+id/left_arrow_iv"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/dimen_5_dip"
+             android:layout_marginRight="@dimen/dimen_3_dip"
+             android:background="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_2_dip"
+            android:text="解题技巧"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/right_arrow_iv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_marginRight="@dimen/dimen_20_dip"
+            android:background="@drawable/arrow_collapse" />
+    </LinearLayout>
+
+    <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/listen_solid_driver" /> -->
+
+</LinearLayout>
