@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sub_layout_bg"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_20_dip"
+                android:paddingRight="@dimen/dimen_20_dip"
+                android:paddingTop="@dimen/dimen_10_dip" >
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="练习1（2013.01）" />
+
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/playTime_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/currTime_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1:27" />
+
+                            <TextView
+                                android:id="@+id/devider"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="|" />
+
+                            <TextView
+                                android:id="@+id/totalTime_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2:58" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_15_dip"
+                            android:orientation="horizontal" >
+
+                            <ImageButton
+                                android:id="@+id/play_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:text="播放" />
+
+                            <SeekBar
+                                android:id="@+id/seekbar"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/playTime_ll"
+                                android:layout_weight="1" />
+
+                            <!-- 后期需要修改图片 -->
+
+                            <ImageButton
+                                android:id="@+id/download_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:text="下载" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/content_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In my family, there are three people, which is my mother, my father and I. 
+  	     	My mother likes cooking, and my father likes reading. We are very happy, and play together a lot. 
+  	     	My mother always looks after me, and my father  looks after me too. I love my parents!"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="滑动" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        >
+                    </ListView>
+
+                    <ImageButton
+                        android:id="@+id/submit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_10_dip"
+                        android:background="@drawable/submit_btn" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip" >
+
+                        <ImageButton
+                            android:id="@+id/previous_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10_dip"
+                            android:background="@drawable/listen_previous_btn"
+                            android:visibility="invisible" />
+
+                        <ImageButton
+                            android:id="@+id/next_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_10_dip"
+                            android:background="@drawable/listen_next_btn"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

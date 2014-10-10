@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/read_parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/listen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#c8ebeb"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/listen_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7ecbff"
+            android:orientation="vertical" >
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxHeight="3dip"
+                android:minHeight="3dip"
+                android:progressDrawable="@drawable/seek_drawable"
+                android:thumb="@drawable/thumb"
+                android:thumbOffset="5dp" />
+
+            <LinearLayout
+                android:id="@+id/playTime_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_1_dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/currTime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00" />
+
+                <TextView
+                    android:id="@+id/devider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|" />
+
+                <TextView
+                    android:id="@+id/totalTime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/play_btn"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/player_play" />
+
+                    <ImageButton
+                        android:id="@+id/download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="@dimen/dimen_15_dip"
+                        android:background="@drawable/download"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@id/download"
+                        android:text="音频下载"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_50_dip"
+                android:layout_toEndOf="@id/progress"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/read_scrollview_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200_dip"
+            android:paddingLeft="@dimen/dimen_10_dip"
+            android:paddingRight="@dimen/dimen_10_dip"
+            android:paddingTop="@dimen/dimen_10_dip" >
+
+            <TextView
+                android:id="@+id/read_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/practice_jag_up" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/read_scroll_pactice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listen"
+        android:background="#deedcf" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/read_question_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_10_dip"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingTop="@dimen/dimen_10_dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/submit_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:background="@drawable/practice_submit_btn" />
+
+                <Button
+                    android:id="@+id/next_practice_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/dimen_40_dip"
+                    android:background="@drawable/practice_next_btn"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/last_practice_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/dimen_40_dip"
+                    android:background="@drawable/practice_previous_btn"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/scroll_bt"
+        android:layout_width="@dimen/dimen_50_dip"
+        android:layout_height="@dimen/dimen_24_dip"
+        android:layout_above="@+id/read_scroll_pactice"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/scroll_bt" />
+
+</RelativeLayout>

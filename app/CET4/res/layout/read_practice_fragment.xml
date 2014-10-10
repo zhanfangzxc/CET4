@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="@dimen/dimen_10_dip">
+
+    <include layout="@layout/read_head_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/main_layout_bg"
+        android:padding="@dimen/dimen_1_dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sub_layout_bg"
+            android:orientation="vertical" >
+		<ScrollView android:layout_width="fill_parent"
+  	     	android:layout_height="wrap_content"
+  	    	android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_20_dip"
+                android:paddingRight="@dimen/dimen_20_dip"
+                android:paddingTop="@dimen/dimen_10_dip" >
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="练习1（2013.01）" 
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In my family, there are three people, which is my mother, my father and I. 
+  	     	My mother likes cooking, and my father likes reading. We are very happy, and play together a lot. 
+  	     	My mother always looks after me, and my father  looks after me too. I love my parents!" 
+                    android:textSize="16sp"/>
+
+				<LinearLayout android:id="@+id/question_layout"
+				    android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="vertical"/>
+
+                 <ImageButton android:id="@+id/submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:background="@drawable/submit_btn"/>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_marginBottom="@dimen/dimen_10_dip">
+                <ImageButton
+                    android:id="@+id/previous_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:background="@drawable/listen_previous_btn" 
+                    android:visibility="invisible"/>
+                <ImageButton
+                    android:id="@+id/next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:background="@drawable/listen_next_btn"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

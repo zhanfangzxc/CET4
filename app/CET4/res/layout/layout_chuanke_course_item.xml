@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/tv_classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_20_dip"
+            android:paddingBottom="@dimen/dimen_20_dip"
+            android:paddingTop="@dimen/dimen_20_dip"
+            android:text="英语四级备考信息"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@drawable/arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

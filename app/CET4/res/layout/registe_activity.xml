@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_40_dip"
+        android:background="@drawable/login_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:text="@string/reg_user_hint"
+        android:textColor="@color/blue_style1"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5_dip"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:text="@string/username_str"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/username_et"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:layout_weight="1"
+                android:hint="@string/reg_username_hint"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@drawable/input_driver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:text="@string/password_str"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_weight="1"
+                android:hint="@string/reg_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@drawable/input_driver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:text="@string/chekpassword_str"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/checkpassword_et"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_weight="1"
+                android:hint="@string/reg_check_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@drawable/input_driver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10_dip" >
+
+        <ImageButton
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@drawable/register_btn" />
+    </LinearLayout>
+
+</LinearLayout>

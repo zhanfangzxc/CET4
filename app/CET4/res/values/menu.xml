@@ -1,0 +1,13 @@
+<resources>
+     <string-array name="finish_menus"> 
+        <item>该组单词已经学习完毕！</item> 
+        <item>复习生词</item>
+        <item>进入下一组</item>
+        <item>取消</item>
+    </string-array> 
+    <string-array name="finish_selected_menus"> 
+        <item>所选择的的单词已经学习完毕！</item> 
+        <item>复习生词</item>
+        <item>取消</item>
+    </string-array>     
+</resources>
